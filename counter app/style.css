@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    /* margin: 0 auto; */
+    text-align: center;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d7d7d7;
+}
+.counter{
+    background-color:white ;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.3);
+    margin: 0 auto;
+    padding: 10px;
+}
+.counter .txt h2{
+    margin: 0;
+}
+.counter .txt p{
+    margin: 0;
+    font-size: 12px;
+    color: #777;
+}
+.show-count{
+    background-color:#d7d7d7 ;
+    padding: 15px;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+.step{
+    margin-bottom: 30px;
+}
+.step p{
+    color: #777;
+}
+.step input{
+    margin-top: -20px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 17px;
+    font-weight: bold;
+    outline: 0;
+    width: 80px;
+    text-align: center;
+    caret-color: #777;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+}
+.buttons button{
+    background: none;
+    border: none ;
+    border: 2px solid ;
+    border-radius: 5px;
+    width: 25%;
+    padding: 10px 20px; 
+    cursor: pointer;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.buttons button.decrease{
+    background-color: #fee2e2;
+    border: 2px solid #dc2626;
+}
+.buttons button.increase{
+    background-color: #dcfce7;
+    border: 2px solid #16a34a;
+}
+.buttons button.reset{
+    background-color: rgb(247, 247, 247);
+}
+.postision{
+    font-size: 20px;
+    font-weight: bold;
+}
+#message {
+    color: #dc2626;
+    font-size: 25px;
+    min-height: 20px;
+    z-index: 2;
+}
+.positive { color: #16a34a; }
+.negative { color: #dc2626; }
+.zero     { color: #6b7280; }

@@ -1,0 +1,217 @@
+*{
+    
+    box-sizing: border-box;
+}
+html{
+    text-align: center;
+    color: white;
+    font-family: "Arial", monospace;
+}
+body{
+    background-color: #D7D7D7;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: #111827;
+     width: 420px;
+    /*height: 550px; */
+    border-radius: 10px;
+    padding: 40px;
+}
+.card .headertxt{
+    margin-top:0 ;
+}
+.formone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.formone input[type = "text"]{
+    padding-right: 89px !important;
+    background-color: #1F2937;
+    outline: 0;
+    border: none;
+    border-radius: 10px;
+    padding: 17px;
+    font-size: 20px;
+    color: #34D399;
+    font-weight: bold;
+    width: 100%;
+    /* position: relative; */
+}
+.formone button{
+    position: absolute;
+    right: 20px;
+    outline: 0;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #1F2937;
+    border: 2px solid #34D399;
+    color: #34D399;
+    /* font-size: 15px; */
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+.formone button:active,
+.formone button:hover{
+    background-color: #34D399;
+    color:#fff ;
+    box-shadow: 0 0  7px #34D399;
+
+}
+.strength{
+    margin-top: 20px;
+}
+.strength-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.strength-head p {
+    margin: 0;
+    color: #34D399;
+}
+.strength-head .level {
+    font-weight: bold;
+    color: #34D399;
+}
+.bars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    
+}
+.bars span {
+    height: 8px;
+    width: 24%;
+    border-radius: 4px;
+    background-color: #374151;
+    transition: background-color .3s;
+}
+.bars span.active {
+    background-color:#34D399;
+    color: #fff;
+}
+
+.length-head{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.length-head p {
+    margin: 0;
+    color: #34D399;;
+}
+.length-head .level {
+    font-weight: bold;
+    color: #34D399;
+    transition: .3s;
+}
+
+.lengthform input[type="range"] {
+    margin-top: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: #111827;
+}
+.lengthform  input[type="range"]::-webkit-slider-runnable-track{
+    width: 100%;
+  height: 8.4px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
+  background: #1F2937;
+  border-radius: 99px;
+  border: 0.2px solid rgba(1, 1, 1, 0);
+}
+.lengthform  input[type="range"]::-webkit-slider-thumb{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: -3.5px;
+    -webkit-appearance: none;
+    box-shadow:0 0 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+
+}
+
+.inbox{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+.item p{
+    font-size: 15px;
+    position: relative;
+}
+.item input[type="checkbox"]{
+    display: none;
+}
+.item  p::before{
+    content: "";
+    /* width: 10px; */
+    /* height: 5px; */
+    margin-right: 10px;
+    padding: 4px 13px;
+    border: 2px solid #9ca3af;
+    border-radius: 10px;
+    background-color: #111827;
+    cursor: pointer;
+    transition: .3s;
+}
+.item p::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    width: 7px;
+    height: 13px;
+    border: solid #111827;
+    border-width: 0 3px 3px 0px;
+    transform: rotate(45deg) scale(0);
+    transition: .3s;
+}
+.item p.valid::before {
+    background-color: #34D399;
+    border-color: #34D399;
+}
+.item p.valid::after {
+    transform: rotate(45deg) scale(1);
+}
+/* .item input[type="checkbox"] + p:active::before{
+    background-color: #34D399;
+    border-color: #34D399;
+} */
+.genratebtn{
+    margin-top: 22px;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #34D399;
+    margin-bottom: -10px;
+    /* box-shadow: 0 0  7px #fff  ; */
+    transition: .3s;
+    cursor: pointer;
+}
+.genratebtn:active,
+.genratebtn:hover{
+    box-shadow: 0 0  7px #34D399;
+
+}
